@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlazeRuler – BRR Token</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --orange: #ff6a00;
+      --red: #d62828;
+      --dark: #1a1a1a;
+      --light: #f1f1f1;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--dark);
+      color: var(--light);
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 20px 80px;
+      background: radial-gradient(circle at top, var(--orange), var(--dark));
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      color: white;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 700px;
+    }
+    .hero-btn {
+      background-color: var(--red);
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .hero-btn:hover {
+      background-color: #a61b1b;
+    }
+    .flaming-coin {
+      width: 120px;
+      height: 120px;
+      margin-top: 40px;
+      animation: flicker 1s infinite alternate;
+    }
+    @keyframes flicker {
+      0% { filter: drop-shadow(0 0 5px orange); }
+      100% { filter: drop-shadow(0 0 20px red); }
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: var(--orange);
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    img.section-img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      margin: 30px 0;
+    }
+
+    .tokenomics .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .tokenomics .grid div {
+      flex: 1 1 200px;
+      background: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .roadmap ul {
+      list-style: none;
+      border-left: 3px solid var(--orange);
+      padding-left: 20px;
+    }
+
+    .roadmap li {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .roadmap li::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: var(--red);
+      border-radius: 50%;
+      position: absolute;
+      left: -8px;
+      top: 5px;
+    }
+
+    .community .socials a {
+      font-size: 1.5rem;
+      margin-right: 15px;
+      transition: 0.3s;
+    }
+
+    .community .socials a:hover {
+      color: var(--orange);
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    footer a {
+      color: #aaa;
+      margin: 0 10px;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .tokenomics .grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>BlazeRuler – feel the heat of the next meme revolution</h1>
+    <p>The BRR token is igniting soon. Prepare for listings, burns and rewards.  
+    We're not just launching a meme — we're lighting a fuse.</p>
+    <a class="hero-btn" href="https://t.me/blazeruler" target="_blank">Join the Blaze</a>
+  </header>
+
+  <!-- About -->
+  <section class="about">
+    <h2>What is BlazeRuler?</h2>
+    <p>BlazeRuler (BRR) is a meme token with fire in its soul. It’s bold, deflationary, and made to burn — literally.  
+    Every transaction fuels the flame. Every holder fans it.</p>
+    <p>BRR is about more than hype. It’s about energy, chaos, and letting the community drive the inferno. No central bosses. Just raw, unfiltered heat from the bottom up.</p>
+  </section>
+
+  <!-- Tokenomics -->
+  <section class="tokenomics">
+    <h2>Tokenomics</h2>
+    <div class="grid">
+      <div><strong>Supply:</strong><br>1,000,000,000</div>
+      <div><strong>Burn per TX:</strong><br>2%</div>
+      <div><strong>Rewards:</strong><br>1% redistributed</div>
+    </div>
+    <p>Each transaction removes tokens from circulation — forever. The longer you hold, the hotter it gets.  
+    BRR isn't just scarce — it's disappearing with every move.</p>
+
+  </section>
+
+  <!-- Roadmap -->
+  <section class="roadmap">
+    <h2>Roadmap</h2>
+    <ul>
+      <li><strong>Q2 2025:</strong> Token launch & DEX listing</li>
+      <li><strong>Q3 2025:</strong> First CEX listing & influencer push</li>
+      <li><strong>Q4 2025:</strong> Viral campaign + second burn event</li>
+      <li><strong>Q1 2026:</strong> Governance & community DAO</li>
+    </ul>
+    <p>This isn’t a straight line — it's a firestorm. We’re moving fast and adapting quicker. BRR evolves as the blaze spreads.</p>
+  </section>
+
+  <!-- Community -->
+  <section class="community">
+    <h2>Join Our Community</h2>
+    <p>We don’t have fans. We have flamethrowers. The BlazeRuler community is where heat lives — memes, ideas, chaos.  
+    Come drop into the Telegram or tweet us your best flames.</p>
+    <div class="socials">
+      <a href="https://t.me/blazeruler" target="_blank">📣 Telegram</a>
+      <a href="https://twitter.com/Blaze_Ruler" target="_blank">🐦 @Blaze_Ruler</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1505245208761-ba872912fac0?auto=format&fit=crop&w=1000&q=80" class="section-img" alt="Community Fire">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 BlazeRuler (BRR). All rights reserved.</p>
+    <p>
+      <a href="#">Whitepaper</a> |
+      <a href="#">Audit</a>
+    </p>
+  </footer>
+
+</body>
+</html>
